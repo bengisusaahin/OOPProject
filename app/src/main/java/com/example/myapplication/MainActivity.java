@@ -22,8 +22,24 @@ public class MainActivity extends AppCompatActivity {
         james.setAge(60,"Atil");
         System.out.println(james.getAge());
 
-        SuperMusician lars = new SuperMusician("Lars","Drums"55);
+        //Inheritance
+        SuperMusician lars = new SuperMusician("Lars","Drums",55);
         System.out.println(lars.sing());
         System.out.println(lars.getAge());
+
+        //Polymorphism
+        //Static Polymorphism
+        Mathematics mathematics = new Mathematics();
+        System.out.println(mathematics.sum());
+        System.out.println(mathematics.sum(5,3));
+        System.out.println(mathematics.sum(5,3,4));
+
+        //Dynamic Polymorphism
+        Animal myAnimal = new Animal();
+        myAnimal.sing();
+
+        Dog barley = new Dog();
+        barley.test();
+        barley.sing();
     }
 }
