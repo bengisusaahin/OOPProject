@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         User myUser = new User("Atil", "Instructor");
+        System.out.println(myUser.information());
+
         System.out.println(myUser.name);
 
         //Encapsulation
@@ -41,5 +43,10 @@ public class MainActivity extends AppCompatActivity {
         Dog barley = new Dog();
         barley.test();
         barley.sing();
+
+        Piano myPiano = new Piano();
+        myPiano.brand = "Yamaha";
+        myPiano.digital = true;
+        myPiano.info();
     }
 }
