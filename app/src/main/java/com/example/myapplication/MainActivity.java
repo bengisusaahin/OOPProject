@@ -21,5 +21,9 @@ public class MainActivity extends AppCompatActivity {
         System.out.println(james.getName());
         james.setAge(60,"Atil");
         System.out.println(james.getAge());
+
+        SuperMusician lars = new SuperMusician("Lars","Drums"55);
+        System.out.println(lars.sing());
+        System.out.println(lars.getAge());
     }
 }
